@@ -5,125 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>First screen mock — SecureWithGrok (family test)</title>
 <meta name="robots" content="noindex,nofollow">
-<style>
-  :root {
-    --bg: #faf8f5;
-    --text: #2b2b2b;
-    --muted: #555;
-    --quiet: #777;
-    --accent: #2f5d62;
-    --line: #ddd7cc;
-    --card: #fff;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    font-size: 1.125rem;
-    line-height: 1.55;
-    color: var(--text);
-    background: var(--bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2.5rem 1.25rem 3rem;
-  }
-  .screen {
-    width: 100%;
-    max-width: 36rem;
-    text-align: center;
-  }
-  .logo {
-    display: block;
-    margin: 0 auto 1.5rem;
-    max-width: 14rem;
-    width: 100%;
-    height: auto;
-  }
-  .logo-text {
-    display: block;
-    margin: 0 0 1.5rem;
-    font-weight: 700;
-    font-size: 1.5rem;
-    letter-spacing: -0.02em;
-    color: var(--text);
-  }
-  .tagline {
-    margin: 0 0 2rem;
-    color: var(--muted);
-    font-size: 1.15rem;
-  }
-  .bots {
-    display: block;
-    width: 100%;
-    max-width: 28rem;
-    margin: 0 auto 1rem;
-    height: auto;
-    border-radius: 1rem;
-  }
-  .bots-slot {
-    width: 100%;
-    max-width: 28rem;
-    margin: 0 auto 1rem;
-    min-height: 11rem;
-    border-radius: 1rem;
-    background: linear-gradient(180deg, #f3f0ea, #e8e3da);
-    border: 1px dashed #c9c1b3;
-    display: grid;
-    place-items: center;
-    color: var(--quiet);
-    font-size: .95rem;
-    padding: 1.25rem;
-  }
-  .caption-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 0 0 1.75rem;
-  }
-  @media (max-width: 40rem) {
-    .caption-row { grid-template-columns: 1fr; }
-    /* Path 1 (I'm new) stays on top when stacked */
-  }
-  .caption-row a {
-    display: block;
-    padding: 1rem 1.1rem;
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: .75rem;
-    text-decoration: none;
-    color: var(--accent);
-    font-weight: 600;
-    font-size: 1.05rem;
-  }
-  .caption-row a:hover,
-  .caption-row a:focus-visible {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(47, 93, 98, 0.15);
-    outline: none;
-  }
-  .reassure {
-    margin: 0;
-    font-size: .95rem;
-    color: var(--quiet);
-  }
-</style>
+<link rel="stylesheet" href="family-test.css">
 </head>
 <body>
 <main class="screen" aria-label="SecureWithGrok first screen mock">
 
-  <!-- When logo is ready: replace the text below with
-       <img class="logo" src="../assets/logo.png" alt="SecureWithGrok"> -->
-  <p class="logo-text">SecureWithGrok</p>
+  <div class="logo-mark"><svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="36" height="36" rx="10" fill="#2f5d62"/><path d="M18 8v14M12 14h12" stroke="#e8f0f1" stroke-width="2.5" stroke-linecap="round"/><circle cx="18" cy="26" r="4" fill="none" stroke="#e8f0f1" stroke-width="2"/></svg><span>SecureWithGrok</span></div>
 
   <p class="tagline">Friendly help for using Grok bots for your security.</p>
 
-  <!-- When the locked two-bot image is ready: replace the slot below with
-       <img class="bots" src="../assets/two-bots.png" alt="Two Grok Bot characters: new visitor on the left, existing bot user on the right"> -->
-  <div class="bots-slot" role="img" aria-label="Placeholder for locked two-bot image. Left is new visitor. Right is existing bot user.">
-    Locked two-bot image<br>
-    <span style="font-size:.85rem">Left = I’m new · Right = I have a Grok bot</span>
+  <!-- TEMP stand-in SVGs until locked two-bots-locked.png + logo.png are provided -->
+  <div class="bots-pair" aria-label="Two path helpers: new visitor on the left, existing bot user on the right">
+    <figure>
+      <svg viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="New visitor helper bot"><rect x="28" y="36" width="64" height="72" rx="18" fill="#2f5d62"/><circle cx="60" cy="28" r="18" fill="#3d7378"/><circle cx="52" cy="26" r="3" fill="#faf8f5"/><circle cx="68" cy="26" r="3" fill="#faf8f5"/><path d="M52 34c4 4 12 4 16 0" stroke="#faf8f5" stroke-width="2" fill="none" stroke-linecap="round"/><rect x="48" y="52" width="24" height="28" rx="6" fill="#e8f0f1"/><path d="M56 60h8M60 56v16" stroke="#2f5d62" stroke-width="2.5" stroke-linecap="round"/><circle cx="60" cy="70" r="5" fill="none" stroke="#2f5d62" stroke-width="2"/><path d="M20 70c8-10 12-6 16 2" stroke="#3d7378" stroke-width="8" stroke-linecap="round" fill="none"/><path d="M84 72c4 8 10 10 16 4" stroke="#3d7378" stroke-width="8" stroke-linecap="round" fill="none"/></svg>
+      <figcaption>I’m new</figcaption>
+    </figure>
+    <figure>
+      <svg viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Existing Grok Bot helper"><rect x="28" y="36" width="64" height="72" rx="18" fill="#244a4e"/><circle cx="60" cy="28" r="18" fill="#2f5d62"/><circle cx="52" cy="26" r="3" fill="#faf8f5"/><circle cx="68" cy="26" r="3" fill="#faf8f5"/><path d="M52 34c4 3 12 3 16 0" stroke="#faf8f5" stroke-width="2" fill="none" stroke-linecap="round"/><rect x="48" y="52" width="24" height="28" rx="6" fill="#e8f0f1"/><path d="M56 60h8M60 56v16" stroke="#244a4e" stroke-width="2.5" stroke-linecap="round"/><circle cx="60" cy="70" r="5" fill="none" stroke="#244a4e" stroke-width="2"/><rect x="86" y="58" width="22" height="28" rx="3" fill="#faf8f5" stroke="#2f5d62" stroke-width="1.5"/><path d="M91 66h12M91 72h12M91 78h8" stroke="#2f5d62" stroke-width="1.5" stroke-linecap="round"/><path d="M22 78v-16c0-4 4-6 8-4" stroke="#2f5d62" stroke-width="8" stroke-linecap="round" fill="none"/></svg>
+      <figcaption>I have a Grok bot</figcaption>
+    </figure>
   </div>
 
   <div class="caption-row">
