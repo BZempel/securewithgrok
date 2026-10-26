@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keep it safe — SecureWithGrok (family test mock)</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+  :root {
+    --bg: #faf8f5;
+    --text: #2b2b2b;
+    --muted: #555;
+    --quiet: #777;
+    --accent: #2f5d62;
+    --accent-dark: #244a4e;
+    --line: #ddd7cc;
+    --card: #fff;
+    --alt: #f1eee8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+    padding: 2rem 1.25rem 3rem;
+  }
+  .wrap {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  .back {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  .back:hover { text-decoration: underline; color: var(--accent); }
+  h1 {
+    font-size: clamp(1.6rem, 4vw, 2rem);
+    line-height: 1.25;
+    margin: 0 0 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+    margin: 2rem 0 .75rem;
+  }
+  p, li { color: var(--muted); }
+  .meanings {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+  }
+  .meanings li {
+    margin: 0 0 1rem;
+    padding: 1rem 1.15rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: .75rem;
+  }
+  .meanings strong { color: var(--text); }
+  .quiet {
+    color: var(--quiet);
+    font-size: 1rem;
+    margin: 0 0 1.5rem;
+  }
+  .does-never {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 1px solid var(--line);
+    border-radius: .75rem;
+    overflow: hidden;
+    background: var(--card);
+    margin: 1rem 0 .75rem;
+  }
+  .does-never > div { padding: 1.15rem 1.25rem; }
+  .does-never > div + div {
+    background: var(--alt);
+    border-left: 1px solid var(--line);
+  }
+  .does-never h3 {
+    font-size: 1.05rem;
+    margin: 0 0 .5rem;
+    color: var(--text);
+  }
+  .does-never p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  @media (max-width: 40rem) {
+    .does-never { grid-template-columns: 1fr; }
+    .does-never > div + div {
+      border-left: 0;
+      border-top: 1px solid var(--line);
+    }
+  }
+  .footer-line {
+    margin: 0 0 1.5rem;
+    color: var(--quiet);
+    font-size: 1rem;
+  }
+  .steps {
+    padding-left: 1.25rem;
+    margin: 0 0 1rem;
+  }
+  .steps li { margin: .5rem 0; }
+  .tip {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: .5rem;
+    padding: 1rem 1.15rem;
+    color: var(--muted);
+    margin: 0 0 1.75rem;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: .85rem 1.35rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .btn:hover { background: var(--accent-dark); }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <a class="back" href="index.html">← Back to first screen</a>
+
+  <h1>Keeping your helper safe, in plain words</h1>
+
+  <ol class="meanings">
+    <li><strong>It still follows the rules.</strong> It never asks for your passwords, codes, or money.</li>
+    <li><strong>You know it’s really your helper.</strong> You open it yourself from the app or link you saved, never from a message someone sent you.</li>
+    <li><strong>Its tips stay current.</strong> Scams and settings change over time, so it helps when your helper’s tips keep up.</li>
+  </ol>
+  <p class="quiet">You stay in control. You can stop anytime.</p>
+
+  <h2>What your helper does, and never does</h2>
+  <div class="does-never">
+    <div>
+      <h3>Your helper does</h3>
+      <p>guides checks you do yourself · explains each step in plain words · goes at your pace · lets you stop anytime</p>
+    </div>
+    <div>
+      <h3>It never</h3>
+      <p>asks for your passwords or codes · asks for remote access · logs in to your accounts · rushes you · asks you to move money or pay with gift cards</p>
+    </div>
+  </div>
+  <p class="footer-line">You always sign in yourself, on the official website or app.</p>
+
+  <h2>Ask your helper one question</h2>
+  <p>One check for today is plenty.</p>
+  <ol class="steps">
+    <li>Open your Grok Bot yourself, from the app or the link you saved.</li>
+    <li>Type: <strong>What will you never ask me for?</strong></li>
+    <li>Compare its answer with the list above.</li>
+  </ol>
+  <p class="tip">If anything ever asks you for passwords, codes, remote access, or money, it’s okay to stop and close the chat. You don’t owe it a reply.</p>
+
+  <p><a class="btn" href="index.html">Done. That’s today’s check.</a></p>
+</main>
+</body>
+</html>
