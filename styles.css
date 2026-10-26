@@ -53,3 +53,8 @@ details p{margin:.75rem 0 0;color:var(--muted)}
   .site-header,nav,.cta,.skip-link{display:none!important}
   body{background:#fff;font-size:11pt}
 }
+.soon{font-size:1rem;font-weight:400;color:var(--muted)}
+.card-soon{opacity:.85}
+.footer-links a{color:var(--muted)}
+.page{padding:4rem 0}
+.page p,.page li{color:var(--muted)}
