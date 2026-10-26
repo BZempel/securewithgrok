@@ -1,0 +1,3 @@
+# Publish this folder as the site root when connecting Netlify to the GitHub repo.
+[build]
+  publish = "."
